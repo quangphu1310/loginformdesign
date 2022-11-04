@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/banner.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background-color: #202123;
+    margin: 0 auto 20px;
+    padding: 0;
+}
+
+.content-left {
+    width: 50%;
+    background: url(/content.jpg) no-repeat;
+    background-position: center;
+    height: 550px;
+}
+
+.content-left>h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Monoton', cursive;
+    padding: 235px 0px 15px
+}
+
+.content-left>p {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.content-right {
+    width: 50%;
+    padding: 25px 0 25px;
+}
+
+input#firstname,
+input#email,
+input#password,
+input#password2 {
+    display: block;
+    margin: 20px;
+    width: 60%;
+    height: 50px;
+    color: #fff;
+    font-size: 17px;
+    border-bottom: 5px #fff solid;
+    background-color: transparent;
+    outline: none;
+    padding: 0 15px;
+    margin: 0 auto 20px;
+    font-weight: 100;
+
+}
+
+::-webkit-input-placeholder {
+    color: rgb(218, 211, 211)
+}
+
+input#firstname:hover,
+input#email:hover,
+input#password:hover,
+input#password2:hover,
+input#firstname:focus,
+input#email:focus,
+input#password:focus,
+input#password2:focus {
+    color: #3970B0;
+    border-bottom: 5px solid #3970b0;
+}
+
+input#firstname:hover::-webkit-input-placeholder,
+input#email:hover::-webkit-input-placeholder,
+input#password:hover::-webkit-input-placeholder,
+input#password2:hover::-webkit-input-placeholder {
+    color: #3970B0;
+}
+
+input#register {
+
+    display: block;
+    width: 65%;
+    margin: 30px auto;
+    height: 50px;
+    background-color: #3970B0;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+/* para */
+.content-right>p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.content-right>ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+.content-right a {
+    text-decoration: none;
+}
+
+.content-right li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-right i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 40px;
+}
+
+.fa-facebook:hover {
+    background-color: #3B5998;
+    border-color: #3B5998;
+    animation: spin 2s linear infinite;
+}
+
+.fa-youtube:hover {
+    background-color: #CD201F;
+    border-color: #CD201F;
+    animation: spin 2s linear infinite;
+}
+
+.fa-twitter:hover {
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+    animation: spin 2s linear infinite;
+}
+
+.fa-google-plus:hover {
+    background-color: #DD4B39;
+    border-color: #DD4B39;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* footer */
+.footer {
+    font-size: 16px;
+    text-align: center;
+    color: #dadada;
+    line-height: 30px;
+    padding: 0 10px 20px;
+}
+
+.footer>a {
+    text-decoration: none;
+    color: #f15f22;
+}
+
+.footer>a:hover {
+    color: #36b051;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 740px)
+{
+    h1{
+        font-size: 35px;
+    }
+    .content{
+        flex-direction: column;
+        height: 100%;
+        width: 65%;
+    }
+    .content-left{
+        width: 100%;
+        height: 251px;
+        }
+    .content-left >h2 {
+        padding: 75px 0 15px;
+    }
+    input#firstname,
+    input#email,
+    input#password,
+    input#password2{
+        width: 70%;
+    }
+    .content-right{
+        width: 100%;
+        height: auto;
+        }
+}
