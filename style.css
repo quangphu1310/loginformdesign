@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(/banner.jpg) no-repeat;
+    background: url(banner.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     font-family: 'Raleway', sans-serif;
@@ -33,7 +33,7 @@ h1 {
 
 .content-left {
     width: 50%;
-    background: url(/content.jpg) no-repeat;
+    background: url(content.jpg) no-repeat;
     background-position: center;
     height: 550px;
 }
